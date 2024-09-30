@@ -15,7 +15,7 @@ import SectionHeading from "./SectionHeading"
 import { motion } from "framer-motion"
 import { useTheme } from "@/context/theme-context"
 import { ExperienceLabel } from "./ExperienceLabel"
-import { useLocale } from "next-intl"
+import { useLocale } from "next-intl" 
 
 export default function Experience({ isMobile }: { isMobile: boolean }) {
   const { theme } = useTheme()
@@ -82,9 +82,14 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
               >
                 <h3 className="font-bold capitalize">{item.title}</h3>
                 <p className="font-normal !mt-0">{item.location}</p>
-                <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                  {item.description}
-                </p>
+                {/* <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                {item.description}
+                </p> */}
+                {item.description.split('\n').map((line, index) => (
+                  <p key={index} className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                    {line}
+                  </p>
+                ))}
               </VerticalTimelineElement>
             </motion.div>
           ))}

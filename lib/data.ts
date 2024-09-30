@@ -1,11 +1,14 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { FaVuejs } from "react-icons/fa";
+import { BsFillBuildingFill, BsRobot,BsWindowFullscreen} from "react-icons/bs"
 import { LuGraduationCap } from "react-icons/lu";
 import knowledgeSharingPlatformImage from '@/public/knowledge-sharing-platform.png';
 import breadditImage from "@/public/breaddit.png";
 import gameHubImage from "@/public/game-hub.png";
 import typingSpeedImage from "@/public/typing-speed.png";
+import profileCut from "@/public/profile_cut.png";
+import plasmaCut from "@/public/plasma_cut.png";
 import visualizationImage from "@/public/d3.png";
 
 export const links = [
@@ -89,32 +92,39 @@ export const experiencesData = [
 
 export const experiencesDataZn = [
     {
-        "title": "计算机与信息技术硕士",
-        "location": "英国圣安德鲁斯大学",
-        "description": "在人机交互、计算机通信系统和信息安全等领域深入学习。培养了计算思维、以用户为中心的设计和数据可视化方面的强大能力，预计以一等学位毕业（GPA17/20）。",
+        "title": "土木工程学士",
+        "location": "河南大学",
+        "description": "度过了懵懂、无忧无虑的四年，人生静止了，仅此而已",
         icon: React.createElement(LuGraduationCap),
-        "date": "2023年9月 - 2024年12月"
+        "date": "2012年9月 - 2016年6月"
     },
     {
-        "title": "前端实习生",
-        "location": "蔚来汽车（中国武汉）",
-        "description": `参与团队多个平台的迭代开发，独立完成内部告警平台的值班表页面开发。协助开发蔚来第三代场站列表与详情页，集成百度地图 API 实现定位与选点功能。优化任务魔棒页面，新增管理员角色，重构权限管理逻辑，用头像列表展示管理员，并整合飞书 API 实现消息发送。自定义 Element-UI 级联选择组件，解决全选德国 2000+ 城市时浏览器卡死问题，通过懒加载优化显著提升性能。遵循 Agile/Scrum 开发流程，进行两周一迭代，通过 Jira 跟进项目需求，设计技术方案，并与测试、后端、产品及 设计团队密切对接。`,
-        "icon": React.createElement(FaVuejs),
-        "date": "2022年8月 - 2022年12月"
+        "title": "岩土工程硕士",
+        "location": "沈阳建筑大学",
+        "description": "为了论文学习了编程，给转行做了铺垫",
+        icon: React.createElement(LuGraduationCap),
+        "date": "2016年9月 - 2019年4月"
     },
     {
-        "title": "前端开发",
-        "location": "武汉大学大数据研究院",
-        "description": "使用umi（React框架）和Ant Design Pro开发和维护Finknow，一个金融知识图谱查询和分析平台。利用基于G6的React图分析工具包graphin开发了股权网络穿透图，增强了数据可视化功能。",
-        "icon": React.createElement(FaReact),
-        "date": "2022年5月 - 2022年8月"
+        "title": "结构设计师&软件开发工程师",
+        "location": "上海杰地建筑设计有限公司",
+        "description": `从事建筑结构设计工作，以及建筑结构设计软件的开发工作`,
+        "icon": React.createElement(BsFillBuildingFill),
+        "date": "2019年5月 - 2021年7月"
     },
     {
-        "title": "数字出版学士",
-        "location": "武汉大学",
-        "description": "以3.81/4.0的GPA毕业，获得数字出版学士学位，掌握了数字媒体和出版技术的基础知识。",
-        "icon": React.createElement(LuGraduationCap),
-        "date": "2019年9月 - 2023年6月"
+        "title": "软件开发工程师",
+        "location": "上海非解构科技有限公司（原设计团队创业）",
+        "description": `1.承担公司主营软件产品与AutocAD、有限元计算软件SAP2000的交互模块的开发`,
+        "icon": React.createElement(BsWindowFullscreen),
+        "date": "2021年8月 - 2022年5月"
+    },
+    {
+        "title": "软件开发工程师",
+        "location": "上海大界机器人科技有限公司",
+        "description": "1、承担型钢项目上位机软件架构、主要开发工作;2、承担坡切项目内与机器人规划组同事的沟通、工作对接；3、承担平板坡切项目单元测试重构;4、承担部分新人指导工作",
+        "icon": React.createElement(BsRobot),
+        "date": "2022年6月至今"
     }
 ]
 
@@ -124,71 +134,104 @@ export type ProjectTags = typeof projectsData[number]["tags"];
 export const projectsData = [
     {
         "title": "Ethical Digital Nation Collaborative Platform",
-        "title_zh": "数字道德国家协作平台",
+        "title_zh": "结构设计工具箱",
         "description":
             "A collaborative platform enhancing cooperation among Scottish higher education institutions in digital ethics.",
-        "desc_zh": "旨在促进苏格兰高校在数字道德领域合作的协作平台。该平台集成用户访谈、工作坊、OAuth登录、最新数字博客RSS feed显示、完备的事件管理系统（包含高级评分与评论功能）以及注重可访问性的响应式设计。",
-        "tags": ["React", "Next.js 14", "TypeScript", "TailwindCSS", "Convex", "Clerk"],
+        "desc_zh": "在三位建模软件rhino的可视化插件中二次开发的工具包，让参数化设计更加的高效",
+        "tags": ["c#", "python", "opennurbs"],
         "imageUrl": knowledgeSharingPlatformImage,
-        "projectUrl": "https://github.com/Codefreyy/Ethical-Digital-Nation",
-        "demoUrl": "https://yujie-ethical-digital-nation.netlify.app/"
+        projectUrl: '',
+        demoUrl: '',
     },
     {
         title: "Typing Speed",
-        title_zh: '打字测验',
+        title_zh: 'YJK可视化编程平台',
         description:
             "A comprehensive typing speed test application that tracks your overall typing performance. It provides detailed statistics, including total words typed, errors made, and accuracy rate, allowing users to monitor their progress and improve their typing efficiency.",
-        desc_zh: "一个打字速度测试应用。敲击即开始打字，计时结束后将显示总敲击单词数、正确率、错误率等。该应用UI简洁现代，支持Dark Mode切换。",
-        tags: ["React", "TypeScript", "Tailwind", 'Framer Motion'],
+        desc_zh: "让非编程开发人员也能体验到编程的便捷，现在已是国内最领先的建筑结构数字智能化设计软件，我主要负责其中与其他设计软件的数据交换模块",
+        tags: ["c#", "wpf", "grpc", '多线程','有限元计算'],
         imageUrl: typingSpeedImage,
-        projectUrl: 'https://github.com/Codefreyy/typing-speed-game',
-        demoUrl: 'https://joy-typing-speed.netlify.app/',
+        projectUrl: '',
+        demoUrl: 'https://www.yjk.cn/article/836/',
     },
     {
         title: "Breddit",
-        title_zh: "社交新闻论坛",
+        title_zh: "(船舶)型钢切割软件",
         description:
             `A modern full-stack Reddit clone with infinite scrolling, secure NextAuth Google authentication, and a custom feed for authenticated users. It uses Upstash Redis for caching and React-Query for efficient, responsive data fetching with optimistic updates.
             `,
-        desc_zh: "一个现代且简洁的Reddit克隆项目，使用Next.js、TypeScript和Tailwind CSS构建。项目功能包括无限滚动动态加载帖子、NextAuth与Google认证、为认证用户提供自定义Feed、高级缓存、乐观更新、React-Query数据获取、美观的帖子编辑器、图片上传和链接预览、以及完整的评论功能。",
-        tags: ["Next.js", "TypeScript", "Upstash", "React-Query", "TailwindCSS"],
-        imageUrl: breadditImage,
-        projectUrl: 'https://github.com/Codefreyy/Breddit',
-        demoUrl: 'https://joy-breddit.vercel.app/',
+        desc_zh: "服务于国内顶级船舶制造商的型钢切割线上位机软件，三人团队，我负责软件架构、主要开发",
+        tags: ["WPF", "ABP", "领域驱动设计", "MySQL", "CGM", "网络通讯", "运动规划"],
+        imageUrl: profileCut,
+        projectUrl: '',
+        demoUrl: 'https://www.roboticplus.com/index/news/details/cate_id/7/id/466.html',
     },
     {
         title: "Global Wealth Spectrum Visualisation",
-        title_zh: '世界财富可视化光谱',
+        title_zh: '平板等离子（火焰）切割软件',
         description: "This interactive visualization explores how tax policies influence wealth, how industries impact fortunes differently by gender, and how these effects vary across continents. Dive into our data to uncover the complex layers of global wealth.",
-        desc_zh: "交互式可视化图表探讨了税收政策如何影响财富、不同行业对不同性别的财富的影响以及这些影响在各大洲之间的差异。深入了解我们的数据，揭示全球财富的复杂层次。",
-        tags: ["d3.js", "HTML", "CSS", "Vanilla JavaScript"],
+        desc_zh: "",
+        tags: ["ABP", "前后端分离", "单元测试"],
+        imageUrl: plasmaCut,
+        projectUrl: '',
+        demoUrl: 'https://www.roboticplus.com/index/factory/index/cate_id/30.html',
+    },
+    {
+        title: "Global Wealth Spectrum Visualisation",
+        title_zh: '飞机大战',
+        description: "This interactive visualization explores how tax policies influence wealth, how industries impact fortunes differently by gender, and how these effects vary across continents. Dive into our data to uncover the complex layers of global wealth.",
+        desc_zh: "",
+        tags: ["Cocos", "TypeScript", "游戏开发", "Stable Diffusion"],
+        imageUrl: visualizationImage,
+        projectUrl: '',
+        demoUrl: 'http://qifei.wochaoyuan.fun:81/',
+    },
+    {
+        title: "Global Wealth Spectrum Visualisation",
+        title_zh: 'ROS2机器人',
+        description: "This interactive visualization explores how tax policies influence wealth, how industries impact fortunes differently by gender, and how these effects vary across continents. Dive into our data to uncover the complex layers of global wealth.",
+        desc_zh: "",
+        tags: ["ROS2", "C++", "机器视觉"],
         imageUrl: visualizationImage,
         projectUrl: 'https://github.com/Codefreyy/d3-evolution-visualisation',
         demoUrl: 'https://global-wealth-spectrum.netlify.app/',
     },
-
-
+    {
+        title: "Global Wealth Spectrum Visualisation",
+        title_zh: 'ROS2可视化编程平台',
+        description: "This interactive visualization explores how tax policies influence wealth, how industries impact fortunes differently by gender, and how these effects vary across continents. Dive into our data to uncover the complex layers of global wealth.",
+        desc_zh: "",
+        tags: ["ROS2", "C++", "c#","Avalonia"],
+        imageUrl: visualizationImage,
+        projectUrl: '',
+        demoUrl: '',
+    },
+    {
+        title: "Global Wealth Spectrum Visualisation",
+        title_zh: '斯坦福小镇复刻',
+        description: "This interactive visualization explores how tax policies influence wealth, how industries impact fortunes differently by gender, and how these effects vary across continents. Dive into our data to uncover the complex layers of global wealth.",
+        desc_zh: "大语言模型替换为国内免费的百度文心一言平台",
+        tags: ["LLM", "PYTHON", "LINUX"],
+        imageUrl: visualizationImage,
+        projectUrl: 'https://github.com/Codefreyy/d3-evolution-visualisation',
+        demoUrl: '',
+    },
 ]
 
 export const skillsData = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next",
-    "Vue2",
-    "Vue3",
-    "Node",
-    "Express",
+    "C#",
+    "WPF",
+    "Avalonia",
+    "C++",
+    "OpenNurbs",
+    "CGM",
+    "OpenCascade",
     "Git",
-    "Github",
-    "Tailwind",
-    "Chakra UI",
-    "Boostrap",
-    "Prisma",
-    "MongoDB",
-    "Framer Motion",
-    "d3",
-    "UI/UX"
+    "OMPL",
+    "ROS2",
+    "Linux",
+    "MySQL",
+    "SQLite",
+    "TypeScript",
+    "Cocos"
 ] 

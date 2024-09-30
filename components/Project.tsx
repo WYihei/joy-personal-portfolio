@@ -48,7 +48,7 @@ export default function Project({
               </Link>
             </h3>
 
-            <div className="flex gap-3 text-sm text-gray-500 dark:text-gray-300">
+            {/* <div className="flex gap-3 text-sm text-gray-500 dark:text-gray-300">
               {" "}
               <Link
                 href={projectUrl}
@@ -69,7 +69,7 @@ export default function Project({
                   <FiExternalLink className="w-5 h-5 " />
                 </Link>
               )}
-            </div>
+            </div> */}
           </div>
 
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">

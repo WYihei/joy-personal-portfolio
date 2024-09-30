@@ -2,8 +2,9 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { BsArrowRight, BsLinkedin } from "react-icons/bs"
+import { BsArrowRight, BsTv } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
+import bilibili from "../public/bilibili.png"
 import { FaGithubSquare } from "react-icons/fa"
 import Link from "next/link"
 import { Source_Code_Pro } from "next/font/google"
@@ -96,7 +97,7 @@ export default function Intro() {
             >
               <TypeAnimation
                 sequence={[
-                  "Frontend Developer",
+                  "Lifelong Learner",
                   1000,
                   "Full Stack Developer",
                   1000,
@@ -143,7 +144,7 @@ export default function Intro() {
           href={
             activeLocale == "en"
               ? "/joy-fullstack-resume.pdf"
-              : "/前端开发-彭郁洁.pdf"
+              : "/简历2024-王一达.pdf"
           }
           locale={false}
         >
@@ -152,22 +153,22 @@ export default function Intro() {
         </Link>
         <a
           className="bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/joy-yujiepeng/"
+          href="https://space.bilibili.com/8414843"
           target="_blank"
         >
-          <BsLinkedin />
+          <BsTv />
         </a>
 
         <a
           className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Codefreyy"
+          href="https://github.com/WYihei"
           target="_blank"
         >
           <FaGithubSquare />
         </a>
         <a
           className=" bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://blog-joy-peng.netlify.app"
+          href="https://blog.csdn.net/m0_59600895?type=blog"
           target="_blank"
         >
           {t("blog")}
