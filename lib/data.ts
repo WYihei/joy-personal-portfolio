@@ -8,6 +8,7 @@ import breadditImage from "@/public/breaddit.png";
 import gameHubImage from "@/public/game-hub.png";
 import typingSpeedImage from "@/public/typing-speed.png";
 import profileCut from "@/public/profile_cut.png";
+import nsorigin from "@/public/nsorigin.png";
 import plasmaCut from "@/public/plasma_cut.png";
 import visualizationImage from "@/public/d3.png";
 
@@ -139,7 +140,7 @@ export const projectsData = [
             "A collaborative platform enhancing cooperation among Scottish higher education institutions in digital ethics.",
         "desc_zh": "在三位建模软件rhino的可视化插件中二次开发的工具包，让参数化设计更加的高效",
         "tags": ["c#", "python", "opennurbs"],
-        "imageUrl": knowledgeSharingPlatformImage,
+        "imageUrl": nsorigin,
         projectUrl: '',
         demoUrl: '',
     },
